@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="time">
+        <div class="circle" id="hours-circle" style="--clr: #ff005c">
+            <div class="dots" id="hours-dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hours-progress"></circle>
+            </svg>
+            <div class="time" id="hours">00<span>Hours</span></div>
+        </div>
+        <div class="circle" id="minutes-circle" style="--clr: #ffea00">
+            <div class="dots" id="minutes-dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="minutes-progress"></circle>
+            </svg>
+            <div class="time" id="minutes">00<span>Minutes</span></div>
+        </div>
+        <div class="circle" id="seconds-circle" style="--clr: #00ff85">
+            <div class="dots" id="seconds-dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="seconds-progress"></circle>
+            </svg>
+            <div class="time" id="seconds">00<span>Seconds</span></div>
+        </div>
+        <div class="circle" id="milliseconds-circle" style="--clr: #ff69b4">
+            <div class="dots" id="milliseconds-dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="milliseconds-progress"></circle>
+            </svg>
+            <div class="time" id="milliseconds">00<span>Milliseconds</span></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
